@@ -5,3 +5,10 @@ export interface APIResponse {
   message?: string;
   data?: [] | object | null;
 }
+
+export interface Font {
+  fontFamily: string;
+  fontSize: number;
+  lineHeight?: string;
+  letterSpacing?: string;
+}
