@@ -36,19 +36,19 @@ function HeroSection({ children, customClasses }: HeroSection) {
     <ResponsiveContainer
       customClasses={{
         "sm:px-7": false,
-        "md:px-16": false,
-        "lg:px-20": false,
-        "xl:px-24": false,
+        "md:px-10": false,
+        "lg:px-14": false,
+        "xl:px-16": false,
         "px-4": false,
         "px-0": true,
         "sm:pl-7": true,
-        "md:pl-16": true,
-        "lg:pl-20": true,
-        "xl:pl-24": true,
+        "md:pl-10": true,
+        "lg:pl-14": true,
+        "xl:pl-16": true,
         "my-5": true,
         "md:my-10": true,
         "lg:my-16": true,
-        "xl:my-10": true,
+        "xl:my-20": true,
       }}
     >
       <div className={heroSectionClasses}>

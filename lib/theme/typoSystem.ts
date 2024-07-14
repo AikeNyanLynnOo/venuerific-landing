@@ -59,6 +59,12 @@ declare module "@mui/material/Typography" {
     subheadline3Semibold: true;
     subheadline3Bold: true;
 
+    // subheadline3Mont
+    subheadline3MontRegular: true;
+    subheadline3MontMedium: true;
+    subheadline3MontSemibold: true;
+    subheadline3MontBold: true;
+
     // body1
     body1Regular: true;
     body1Medium: true;
@@ -77,17 +83,29 @@ declare module "@mui/material/Typography" {
     body3Semibold: true;
     body3Bold: true;
 
+    // body3Mont
+    body3MontRegular: true;
+    body3MontMedium: true;
+    body3MontSemibold: true;
+    body3MontBold: true;
+
     // body4
     body4Regular: true;
     body4Medium: true;
     body4Semibold: true;
     body4Bold: true;
 
+    // body4Mont
+    body4MontRegular: true;
+    body4MontMedium: true;
+    body4MontSemibold: true;
+    body4MontBold: true;
+
     // btnL
     btnLRegular: true;
     btnLMedium: true;
     btnLSemibold: true;
-   
+
     // btnM
     btnMRegular: true;
     btnMMedium: true;
@@ -134,11 +152,17 @@ const subheadline2 = () =>
   fontFunc(inter.style.fontFamily, 18, "26px", "0.01em");
 const subheadline3 = () =>
   fontFunc(inter.style.fontFamily, 16, "1.5em", "0.01em");
+const subheadline3Mont = () =>
+  fontFunc(montserrat.style.fontFamily, 16, "1.5em", "0.01em");
 
 const body1 = () => fontFunc(inter.style.fontFamily, 18, "22px", "0.01em");
 const body2 = () => fontFunc(inter.style.fontFamily, 16, "20px", "0.01em");
 const body3 = () => fontFunc(inter.style.fontFamily, 14, "18px", "0.01em");
+const body3Mont = () =>
+  fontFunc(montserrat.style.fontFamily, 14, "18px", "0.01em");
 const body4 = () => fontFunc(inter.style.fontFamily, 12, "16px", "0.01em");
+const body4Mont = () =>
+  fontFunc(montserrat.style.fontFamily, 12, "16px", "0.01em");
 
 const btnL = () => fontFunc(inter.style.fontFamily, 18, "22px", "initial");
 const btnM = () => fontFunc(inter.style.fontFamily, 16, "20px", "initial");
@@ -317,6 +341,24 @@ export const typoSystem = {
     fontWeight: 700,
   },
 
+  // subheadline3Mont
+  subheadline3MontRegular: {
+    ...subheadline3Mont(),
+    fontWeight: 400,
+  },
+  subheadline3MontMedium: {
+    ...subheadline3Mont(),
+    fontWeight: 500,
+  },
+  subheadline3MontSemibold: {
+    ...subheadline3Mont(),
+    fontWeight: 600,
+  },
+  subheadline3MontBold: {
+    ...subheadline3Mont(),
+    fontWeight: 700,
+  },
+
   // end subheadline
 
   // body1
@@ -373,6 +415,24 @@ export const typoSystem = {
     fontWeight: 700,
   },
 
+  // body3Mont
+  body3MontRegular: {
+    ...body3Mont(),
+    fontWeight: 400,
+  },
+  body3MontMedium: {
+    ...body3Mont(),
+    fontWeight: 500,
+  },
+  body3MontSemibold: {
+    ...body3Mont(),
+    fontWeight: 600,
+  },
+  body3MontBold: {
+    ...body3Mont(),
+    fontWeight: 700,
+  },
+
   // body4
   body4Regular: {
     ...body4(),
@@ -388,6 +448,24 @@ export const typoSystem = {
   },
   body4Bold: {
     ...body4(),
+    fontWeight: 700,
+  },
+
+  // body4Mont
+  body4MontRegular: {
+    ...body4Mont(),
+    fontWeight: 400,
+  },
+  body4MontMedium: {
+    ...body4Mont(),
+    fontWeight: 500,
+  },
+  body4MontSemibold: {
+    ...body4Mont(),
+    fontWeight: 600,
+  },
+  body4MontBold: {
+    ...body4Mont(),
     fontWeight: 700,
   },
   // end Body

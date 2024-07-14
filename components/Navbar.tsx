@@ -21,8 +21,6 @@ const Navbar = ({ children, customClasses }: Navbar) => {
       sticky: true,
       "top-0": true,
       "items-center": true,
-      // "justify-end": true,
-      // "border-b": true,
       "justify-between": true,
       ...customClasses,
     });
@@ -33,6 +31,8 @@ const Navbar = ({ children, customClasses }: Navbar) => {
         sticky: true,
         "top-0": true,
         "z-20": true,
+        "backdrop-blur-xl": true,
+        "bg-white/50": true,
       }}
     >
       <nav className={navClasses}>

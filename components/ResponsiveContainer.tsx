@@ -19,9 +19,9 @@ export const ResponsiveContainer = ({
       "bg-white": true,
       "px-4": true,
       "sm:px-7": true,
-      "md:px-16": true,
-      "lg:px-20": true,
-      "xl:px-24": true,
+      "md:px-10": true,
+      "lg:px-14": true,
+      "xl:px-16": true,
       ...customClasses,
     });
   }, [customClasses]);

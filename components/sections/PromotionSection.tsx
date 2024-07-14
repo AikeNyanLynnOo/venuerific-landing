@@ -32,7 +32,7 @@ function PromotionSection({ children, customClasses }: PromotionSection) {
         "my-5": true,
         "md:my-10": true,
         "lg:my-16": true,
-        "xl:my-10": true,
+        "xl:my-20": true,
       }}
     >
       <TitleWithSubtitle
