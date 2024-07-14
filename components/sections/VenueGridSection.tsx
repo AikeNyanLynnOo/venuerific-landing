@@ -1,7 +1,7 @@
 import React from "react";
 import { ResponsiveGridWithScroll } from "../molecules/ResponsiveGridWithScroll";
-import { Grid } from "@mui/material";
-import { ResponsiveContainer } from "../ResponsiveContainer";
+import { Grid, Typography } from "@mui/material";
+import ButtonWithIcon from "../atoms/ButtonWithIcon";
 import { VenueCard } from "../molecules/VenueCard";
 import { neutral } from "@/lib/theme/colors";
 import TitleWithSubtitle from "../molecules/TitleWithSubtitle";
@@ -122,6 +122,36 @@ function VenueGridSection() {
           </Grid>
         ))}
       </ResponsiveGridWithScroll>
+      <div className="flex w-full justify-center my-10">
+        <ButtonWithIcon
+          backgroundColor={"#2560F9"}
+          variant="contained"
+          customStyles={{
+            px: 3.5,
+            py: 2.5,
+            borderRadius: 2,
+          }}
+          icon={{
+            isMaterialIcon: true,
+            nameOrPath: "subdirectory_arrow_right",
+          }}
+          iconPosition="start"
+          customIconStyles={{
+            marginRight: "8px",
+            fontSize : "14px"
+          }}
+        >
+          <Typography
+            variant="body3MontRegular"
+            sx={{
+              color: "#FFFFFF",
+            }}
+          >
+            {" "}
+            List Your Venues
+          </Typography>
+        </ButtonWithIcon>
+      </div>
     </div>
   );
 }

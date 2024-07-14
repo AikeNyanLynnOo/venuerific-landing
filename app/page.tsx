@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import PromotionSection from "@/components/sections/PromotionSection";
 import VenueGridSection from "@/components/sections/VenueGridSection";
+import SubscribeSection from "@/components/sections/SubscribeSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <PromotionSection />
       <VenueGridSection />
+      <SubscribeSection />
     </main>
   );
 }
