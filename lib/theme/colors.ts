@@ -16,4 +16,5 @@ export const subtle = {
   200: "#CBCBCB",
   300: "#878787",
   400: "#868686",
+  500: "#EAECFF",
 };

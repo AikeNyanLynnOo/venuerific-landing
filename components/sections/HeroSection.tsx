@@ -25,7 +25,7 @@ function HeroSection({ children, customClasses }: HeroSection) {
       "sm:h-[60vh]": true,
       "md:h-[50vh]": true,
       "lg:h-[60vh]": true,
-      "xl:h-[85vh]": true,
+      "xl:h-[80vh]": true,
       "sm:px-0": true,
       relative: true,
       "overflow-hidden": true,
