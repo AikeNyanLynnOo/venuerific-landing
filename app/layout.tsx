@@ -1,5 +1,5 @@
 "use client";
-// import "./globals.css";
+import "./globals.css";
 import { typoSystem } from "@/lib/theme/typoSystem";
 import {
   createTheme,
@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import { useMemo } from "react";
 import { subtle } from "@/lib/theme/colors";
-import { StoreProvider } from "./components/StoreProvider";
+import { StoreProvider } from "@/components/StoreProvider";
 
 export default function RootLayout({
   children,
@@ -24,7 +24,7 @@ export default function RootLayout({
           MuiDivider: {
             styleOverrides: {
               root: {
-                color: subtle[10],
+                color: subtle[100],
               },
             },
           },

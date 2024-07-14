@@ -3,6 +3,108 @@ import { Inter, Montserrat } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
 
+declare module "@mui/material/Typography" {
+  interface TypographyPropsVariantOverrides {
+    // headline1
+    headline1Regular: true;
+    headline1Medium: true;
+    headline1Semibold: true;
+    headline1Bold: true;
+
+    // headline2
+    headline2Regular: true;
+    headline2Medium: true;
+    headline2Semibold: true;
+    headline2Bold: true;
+
+    // headline3
+    headline3Regular: true;
+    headline3Medium: true;
+    headline3Semibold: true;
+    headline3Bold: true;
+
+    // headline4
+    headline4Regular: true;
+    headline4Medium: true;
+    headline4Semibold: true;
+    headline4Bold: true;
+
+    // headline5
+    headline5Regular: true;
+    headline5Medium: true;
+    headline5Semibold: true;
+    headline5Bold: true;
+
+    // subheadline1Inter
+    subheadline1InterRegular: true;
+    subheadline1InterMedium: true;
+    subheadline1InterSemibold: true;
+    subheadline1InterBold: true;
+
+    // subheadline1Mont
+    subheadline1MontRegular: true;
+    subheadline1MontMedium: true;
+    subheadline1MontSemibold: true;
+    subheadline1MontBold: true;
+
+    // subheadline2
+    subheadline2Regular: true;
+    subheadline2Medium: true;
+    subheadline2Semibold: true;
+    subheadline2Bold: true;
+
+    // subheadline3
+    subheadline3Regular: true;
+    subheadline3Medium: true;
+    subheadline3Semibold: true;
+    subheadline3Bold: true;
+
+    // body1
+    body1Regular: true;
+    body1Medium: true;
+    body1Semibold: true;
+    body1Bold: true;
+
+    // body2
+    body2Regular: true;
+    body2Medium: true;
+    body2Semibold: true;
+    body2Bold: true;
+
+    // body3
+    body3Regular: true;
+    body3Medium: true;
+    body3Semibold: true;
+    body3Bold: true;
+
+    // body4
+    body4Regular: true;
+    body4Medium: true;
+    body4Semibold: true;
+    body4Bold: true;
+
+    // btnL
+    btnLRegular: true;
+    btnLMedium: true;
+    btnLSemibold: true;
+   
+    // btnM
+    btnMRegular: true;
+    btnMMedium: true;
+    btnMSemibold: true;
+
+    // btnS
+    btnSRegular: true;
+    btnSMedium: true;
+    btnSSemibold: true;
+
+    // btnXs
+    btnXsRegular: true;
+    btnXsMedium: true;
+    btnXsSemibold: true;
+  }
+}
+
 export const fontFunc = (
   fontFamily: string,
   fontSize: number | string,
