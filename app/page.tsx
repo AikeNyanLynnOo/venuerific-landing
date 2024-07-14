@@ -5,6 +5,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import PromotionSection from "@/components/sections/PromotionSection";
 import VenueGridSection from "@/components/sections/VenueGridSection";
 import SubscribeSection from "@/components/sections/SubscribeSection";
+import FooterSection from "@/components/sections/FooterSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <PromotionSection />
       <VenueGridSection />
       <SubscribeSection />
+      <FooterSection />
     </main>
   );
 }

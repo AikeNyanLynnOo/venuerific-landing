@@ -59,7 +59,8 @@ export const VenueCard = ({
   return (
     <Card
       sx={{
-        borderRadius: getSpacing(xl, lg, md, sm, 4),
+        // borderRadius: getSpacing(xl, lg, md, sm, 4),
+        borderRadius: 4,
         border: `1px solid ${subtle[100]}`,
         boxShadow: "0px 1px 40px 0px rgba(0, 0, 0, 0.06)",
         cursor: "pointer",
@@ -71,11 +72,12 @@ export const VenueCard = ({
     >
       <CardMedia
         sx={{
-          height: 182,
+          height: 200,
           width: "100%",
           position: "relative",
           objectFit: "cover",
-          borderRadius: getSpacing(xl, lg, md, sm, 4),
+          // borderRadius: getSpacing(xl, lg, md, sm, 4),
+          borderRadius: 4,
           ...customCardMediaSxProps,
         }}
         image={venue.image}
