@@ -122,18 +122,18 @@ export const fontFunc = (
 const headline1 = () => fontFunc(inter.style.fontFamily, 52, "72px", "0.01em");
 const headline2 = () => fontFunc(inter.style.fontFamily, 38, "52px", "0.01em");
 const headline3 = () => fontFunc(inter.style.fontFamily, 36, "44px", "0.01em");
-const headline4 = () => fontFunc(inter.style.fontFamily, 30, "auto", "0.01em");
+const headline4 = () => fontFunc(inter.style.fontFamily, 30, "1.5em", "0.01em");
 const headline5 = () =>
-  fontFunc(montserrat.style.fontFamily, 22, "auto", "0.01em");
+  fontFunc(montserrat.style.fontFamily, 22, "1.5em", "0.01em");
 
 const subheadline1Inter = () =>
   fontFunc(inter.style.fontFamily, 20, "30px", "0.01em");
 const subheadline1Mont = () =>
-  fontFunc(montserrat.style.fontFamily, 20, "auto", "0.01em");
+  fontFunc(montserrat.style.fontFamily, 20, "1.5em", "0.01em");
 const subheadline2 = () =>
   fontFunc(inter.style.fontFamily, 18, "26px", "0.01em");
 const subheadline3 = () =>
-  fontFunc(inter.style.fontFamily, 16, "auto", "0.01em");
+  fontFunc(inter.style.fontFamily, 16, "1.5em", "0.01em");
 
 const body1 = () => fontFunc(inter.style.fontFamily, 18, "22px", "0.01em");
 const body2 = () => fontFunc(inter.style.fontFamily, 16, "20px", "0.01em");

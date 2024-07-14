@@ -10,10 +10,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 export interface Navbar {
   children?: React.ReactNode;
-  customNavClasses?: object;
+  customClasses?: object;
 }
 
-const Navbar = ({ children, customNavClasses }: Navbar) => {
+const Navbar = ({ children, customClasses }: Navbar) => {
   const navClasses = useMemo(() => {
     return clsx({
       flex: true,
@@ -21,11 +21,12 @@ const Navbar = ({ children, customNavClasses }: Navbar) => {
       sticky: true,
       "top-0": true,
       "items-center": true,
-      //   "justify-end": true,
+      // "justify-end": true,
+      // "border-b": true,
       "justify-between": true,
-      ...customNavClasses,
+      ...customClasses,
     });
-  }, [customNavClasses]);
+  }, [customClasses]);
   return (
     <ResponsiveContainer
       customClasses={{

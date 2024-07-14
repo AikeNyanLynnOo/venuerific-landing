@@ -20,6 +20,7 @@ const config: Config = {
       current: "currentColor",
       ...colors,
       primary: {
+        50: "#DFF4FF",
         100: "#33B3EF",
         200: "#3373EF",
       },

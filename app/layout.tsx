@@ -19,6 +19,15 @@ export default function RootLayout({
   const theme = useMemo(
     () =>
       createTheme({
+        breakpoints: {
+          values: {
+            xs: 0,
+            sm: 640,
+            md: 768,
+            lg: 1024,
+            xl: 1280,
+          },
+        },
         spacing: (factor: number) => `${0.25 * factor}rem`, // (Bootstrap strategy)
         components: {
           MuiDivider: {

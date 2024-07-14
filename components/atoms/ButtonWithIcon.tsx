@@ -8,17 +8,19 @@ import {
   TypographyProps,
 } from "@mui/material";
 import { CSSProperties } from "react";
+import CustomIcon, { IconType } from "./CustomIcon";
 
 export interface ButtonWithIcon {
-  icon?: string;
+  icon?: IconType;
   iconPosition?: string;
   handleClick?: () => void;
-  buttonText: string;
+  buttonText?: string;
   backgroundColor?: string;
   variant?: ButtonProps["variant"];
   textVariant?: TypographyProps["variant"];
   customStyles?: SxProps;
   customIconStyles?: CSSProperties;
+  children?: React.ReactNode;
   [key: string]: any;
 }
 
@@ -32,6 +34,7 @@ export default function ButtonWithIcon({
   textVariant = "btnXsRegular",
   customStyles,
   customIconStyles,
+  children,
   ...props
 }: ButtonWithIcon) {
   return (
@@ -43,29 +46,50 @@ export default function ButtonWithIcon({
         display: "flex",
         px: 0,
         alignItems: "center",
+        "&:hover": {
+          backgroundColor,
+          opacity: "90%",
+        },
         ...customStyles,
       }}
     >
-      {iconPosition === "start" && (
-        <Icon
-          style={{
+      {icon && iconPosition === "start" && (
+        // <Icon
+        //   style={{
+        //     marginRight: "4px",
+        //     ...customIconStyles,
+        //   }}
+        // >
+        //   {icon}
+        // </Icon>
+        <CustomIcon
+          icon={icon}
+          customStyles={{
             marginRight: "4px",
             ...customIconStyles,
           }}
-        >
-          {icon}
-        </Icon>
+        />
       )}
-      <Typography variant={textVariant}>{buttonText}</Typography>
-      {iconPosition === "end" && (
-        <Icon
-          style={{
-            marginLeft: "4px",
+      {buttonText && (
+        <Typography variant={textVariant}>{buttonText}</Typography>
+      )}
+      {children}
+      {icon && iconPosition === "end" && (
+        // <Icon
+        //   style={{
+        //     marginLeft: "4px",
+        //     ...customIconStyles,
+        //   }}
+        // >
+        //   {icon}
+        // </Icon>
+        <CustomIcon
+          icon={icon}
+          customStyles={{
+            marginRight: "4px",
             ...customIconStyles,
           }}
-        >
-          {icon}
-        </Icon>
+        />
       )}
     </Button>
   );
