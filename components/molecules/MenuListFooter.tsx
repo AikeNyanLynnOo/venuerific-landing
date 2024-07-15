@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import { IconType } from "../atoms/CustomIcon";
 import { Typography } from "@mui/material";
 import { subtle } from "@/lib/theme/colors";
@@ -8,6 +8,7 @@ import Link from "next/link";
 export interface ListItem {
   text?: string;
   icon?: IconType;
+  customIconStyles?: CSSProperties;
 }
 
 export interface MenuListFooter {
@@ -19,7 +20,7 @@ export interface MenuListFooter {
 function MenuListFooter({ title, listItems, customClasses }: MenuListFooter) {
   return (
     <div
-      className={`w-full md:w-1/4 text-center md:text-left my-8 md:my-0 ${customClasses}`}
+      className={`w-full md:w-1/5 text-center md:text-left my-5 md:my-0 ${customClasses}`}
     >
       <Typography
         variant="subheadline1MontBold"
@@ -29,7 +30,7 @@ function MenuListFooter({ title, listItems, customClasses }: MenuListFooter) {
       >
         {title}
       </Typography>
-      <div className="my-2 flex flex-row flex-wrap gap-x-4 justify-center md:block">
+      <div className="mt-3 mb-2 flex flex-row flex-wrap gap-x-4 gap-y-4 justify-center md:block">
         {listItems.map((listItem, index) => (
           <Link href="/" key={index}>
             <LabelWithIcon
@@ -50,6 +51,7 @@ function MenuListFooter({ title, listItems, customClasses }: MenuListFooter) {
                   md: "left",
                 },
               }}
+              customIconStyles={listItem?.customIconStyles}
             />
           </Link>
         ))}

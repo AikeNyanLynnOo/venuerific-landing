@@ -1,7 +1,7 @@
 import React from "react";
 import { ResponsiveContainer } from "../ResponsiveContainer";
 import Image from "next/image";
-import { Typography, Icon } from "@mui/material";
+import { Typography, Icon, Divider } from "@mui/material";
 import MenuListFooter from "../molecules/MenuListFooter";
 import { subtle } from "@/lib/theme/colors";
 import Link from "next/link";
@@ -17,7 +17,7 @@ function FooterSection() {
       }}
     >
       <div className="flex flex-col md:flex-row gap-x-4 justify-between">
-        <div className="flex flex-col items-center gap-y-8 md:gap-y-5 w-full md:w-1/4">
+        <div className="flex flex-col items-center md:items-start gap-y-8 md:gap-y-5 w-full md:w-2/5">
           <Image
             src="/logo_with_text.svg"
             alt="venuerific_new_logo"
@@ -50,7 +50,7 @@ function FooterSection() {
             >
               Payment partners
             </Typography>
-            <div className="flex items-center justify-between flex-wrap my-7">
+            <div className="flex items-center justify-center gap-x-10 gap-y-7 flex-wrap my-7 px-7">
               <Image src="/assets/visa.svg" alt="visa" height={20} width={60} />
               <Image
                 src="/assets/master.svg"
@@ -174,42 +174,48 @@ function FooterSection() {
           ]}
         />
         <MenuListFooter
-          title="Menu"
+          title="Information"
           listItems={[
             {
-              text: "Blog",
+              text: "How It Works",
             },
             {
-              text: "Videos",
+              text: "About",
             },
             {
-              text: "Event",
+              text: "FAQ",
             },
             {
-              text: "Press",
+              text: "Terms and Conditions",
             },
             {
-              text: "Partners",
+              text: "Privacy",
             },
           ]}
         />
         <MenuListFooter
-          title="Menu"
+          title="Office"
           listItems={[
             {
-              text: "Blog",
+              text: "+65 6955 8770",
+              icon: {
+                isMaterialIcon: false,
+                nameOrPath: "/assets/phone_icon.svg",
+              },
             },
             {
-              text: "Videos",
+              text: "info@venuerific.com",
+              icon: {
+                isMaterialIcon: false,
+                nameOrPath: "/assets/mail_icon_red.svg",
+              },
             },
             {
-              text: "Event",
-            },
-            {
-              text: "Press",
-            },
-            {
-              text: "Partners",
+              text: "9 Raffles Pl, Republic Plaza, Singapore 048619",
+              icon: {
+                isMaterialIcon: false,
+                nameOrPath: "/assets/location_icon_red.svg",
+              },
             },
           ]}
         />
@@ -222,11 +228,19 @@ function FooterSection() {
                 isMaterialIcon: false,
                 nameOrPath: "/assets/youtube_blue.svg",
               },
+              customIconStyles: {
+                height: 32,
+                width: 32,
+              },
             },
             {
               icon: {
                 isMaterialIcon: false,
                 nameOrPath: "/assets/facebook_blue.svg",
+              },
+              customIconStyles: {
+                height: 32,
+                width: 32,
               },
             },
             {
@@ -234,11 +248,19 @@ function FooterSection() {
                 isMaterialIcon: false,
                 nameOrPath: "/assets/mail_blue.svg",
               },
+              customIconStyles: {
+                height: 32,
+                width: 32,
+              },
             },
             {
               icon: {
                 isMaterialIcon: false,
                 nameOrPath: "/assets/linkedin_blue.svg",
+              },
+              customIconStyles: {
+                height: 32,
+                width: 32,
               },
             },
             {
@@ -246,10 +268,26 @@ function FooterSection() {
                 isMaterialIcon: false,
                 nameOrPath: "/assets/instagram_blue.svg",
               },
+              customIconStyles: {
+                height: 32,
+                width: 32,
+              },
             },
           ]}
         />
       </div>
+      <Divider />
+      <Typography
+        variant="subheadline1MontRegular"
+        component="p"
+        sx={{
+          my: 4,
+          width: "100%",
+          textAlign: "center",
+        }}
+      >
+        Venuerific © 2021
+      </Typography>
     </ResponsiveContainer>
   );
 }

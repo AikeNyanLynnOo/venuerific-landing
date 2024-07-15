@@ -61,9 +61,9 @@ export const LabelWithIcon = ({
                 src={icon && icon.nameOrPath}
                 alt="icon"
                 style={{
-                  height: "15px",
-                  width: "15px",
-                  objectFit: "cover",
+                  height: "16px",
+                  width: "16px",
+                  objectFit: "contain",
                   ...customIconStyles,
                 }}
                 width={50}
