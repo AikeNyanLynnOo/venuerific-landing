@@ -1,7 +1,10 @@
 ## How to Run
 
-1. npm install && npm run build
-2. npm start
+1. Clone the project
+2. Install the dependencies using `npm install`
+3. Copy and paste the env file I've attached to the email to the `env.local` file (in the root project directory).
+4. Run `npm run build`
+5. Run `npm start` & see the project at ' http://localhost:3000'
 
 ## Techs & Best Practices Covered
 
