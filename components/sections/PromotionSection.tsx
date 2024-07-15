@@ -66,7 +66,7 @@ function PromotionSection({ children, customClasses }: PromotionSection) {
         }}
       />
       <div className={promotionSectionClasses}>
-        <div className="w-full md:w-2/3 p-10 relative lg:min-h-[300px] xl:min-h-[500px] flex flex-col md:flex-row items-start justify-between overflow-y-hidden bg-primary-50 rounded-xl">
+        <div className="w-full md:w-2/3 p-10 relative lg:min-h-[200px] xl:min-h-[400px] flex flex-col md:flex-row items-start justify-between overflow-y-hidden bg-primary-50 rounded-xl">
           <TitleWithSubtitle
             title={{
               value: "Manage your venue anywhere",
@@ -109,10 +109,10 @@ function PromotionSection({ children, customClasses }: PromotionSection) {
             alt="iphone_mockup"
             width={500}
             height={400}
-            className="object-contain w-full mt-10 md:mt-0 md:w-2/6 h-fit static -mb-10 md:-mb-0 md:absolute md:right-16 bottom-0"
+            className="object-contain w-full mt-10 md:mt-0 md:w-2/6 xl:w-3/12 h-fit static -mb-10 md:-mb-0 md:absolute md:right-16 bottom-0"
           />
         </div>
-        <div className="w-full md:w-1/3 p-10 lg:min-h-[300px] xl:min-h-[500px] bg-subtle-500 rounded-xl flex flex-col items-center md:items-start">
+        <div className="w-full md:w-1/3 p-10 lg:min-h-[200px] xl:min-h-[400px] bg-subtle-500 rounded-xl flex flex-col items-center md:items-start">
           <span className="bg-subtle-200 bg-opacity-90 mb-7 rounded-full h-20 w-20 flex items-center justify-center">
             <Image
               src="/assets/shield_icon.svg"
