@@ -5,11 +5,12 @@
 
 ## Techs & Best Practices Covered
 
+* Typescript, React
 * NextJS-14 App router
 * Serverside data fetching
 * React Hooks(useMemo, useCallback), Custom Hooks, Custom MUI styled components
 * Redux, Redux-saga, Redux-toolkit (for later use)
-* Axios
+* Axios, Promise
 * Material UI & CSS in JS
 * Tailwind & Pure CSS
 * Responsiveness for all devices, customizing breakpoints, theme, colors, typography & default styles
