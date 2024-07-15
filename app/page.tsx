@@ -1,5 +1,3 @@
-import { Button } from "@mui/material";
-import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import PromotionSection from "@/components/sections/PromotionSection";
@@ -10,7 +8,7 @@ import { getVenues } from "@/lib/helpers/apiFunctions";
 import { Suspense } from "react";
 
 export default async function Home() {
-  const { data } = await getVenues();
+  const venuesRes = await getVenues();
 
   return (
     <main>
@@ -19,7 +17,13 @@ export default async function Home() {
       <PromotionSection />
       <Suspense>
         <VenueGridSection
-          venues={(data && data.data && data.data.venues) || []}
+          venues={
+            (venuesRes &&
+              venuesRes.data &&
+              venuesRes.data.data &&
+              venuesRes.data.data.venues) ||
+            []
+          }
         />
       </Suspense>
       <SubscribeSection />
