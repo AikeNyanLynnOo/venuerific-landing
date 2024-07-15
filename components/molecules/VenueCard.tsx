@@ -59,7 +59,6 @@ export const VenueCard = ({
   return (
     <Card
       sx={{
-        // borderRadius: getSpacing(xl, lg, md, sm, 4),
         borderRadius: 4,
         border: `1px solid ${subtle[100]}`,
         boxShadow: "0px 1px 40px 0px rgba(0, 0, 0, 0.06)",
@@ -76,7 +75,6 @@ export const VenueCard = ({
           width: "100%",
           position: "relative",
           objectFit: "cover",
-          // borderRadius: getSpacing(xl, lg, md, sm, 4),
           borderRadius: 4,
           ...customCardMediaSxProps,
         }}

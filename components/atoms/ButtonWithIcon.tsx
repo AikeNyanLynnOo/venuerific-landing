@@ -54,14 +54,6 @@ export default function ButtonWithIcon({
       }}
     >
       {icon && iconPosition === "start" && (
-        // <Icon
-        //   style={{
-        //     marginRight: "4px",
-        //     ...customIconStyles,
-        //   }}
-        // >
-        //   {icon}
-        // </Icon>
         <CustomIcon
           icon={icon}
           customStyles={{
@@ -75,14 +67,6 @@ export default function ButtonWithIcon({
       )}
       {children}
       {icon && iconPosition === "end" && (
-        // <Icon
-        //   style={{
-        //     marginLeft: "4px",
-        //     ...customIconStyles,
-        //   }}
-        // >
-        //   {icon}
-        // </Icon>
         <CustomIcon
           icon={icon}
           customStyles={{

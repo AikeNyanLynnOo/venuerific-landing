@@ -1,10 +1,10 @@
 import { makeRequest } from "./makeRequest";
 
-export const getVenues = async ({ ENV }: { ENV: any }) => {
+export const getVenues = async () => {
   const res = await makeRequest({
     method: "get",
     maxBodyLength: Infinity,
-    url: `${ENV.API_URL}/landing.json`,
+    url: `${process.env.API_URL}/landing.json`,
     headers: {
       "Content-Type": "application/json",
     },

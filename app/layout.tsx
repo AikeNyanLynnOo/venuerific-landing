@@ -68,14 +68,15 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <StoreProvider>
-          <StyledEngineProvider injectFirst>
-            <ThemeProvider theme={theme}>
-              <CssBaseline />
-              {children}
-            </ThemeProvider>
-          </StyledEngineProvider>
-        </StoreProvider>
+        {/* For Later State Management */}
+        {/* <StoreProvider> */}
+        <StyledEngineProvider injectFirst>
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            {children}
+          </ThemeProvider>
+        </StyledEngineProvider>
+        {/* </StoreProvider> */}
       </body>
     </html>
   );

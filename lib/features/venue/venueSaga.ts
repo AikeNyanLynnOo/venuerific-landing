@@ -1,4 +1,7 @@
-import { call, put, takeLatest, race, delay, select } from "redux-saga/effects";
+import { put, takeLatest, race, delay, select } from "redux-saga/effects";
+
+import * as Effects from "redux-saga/effects";
+const call: any = Effects.call;
 
 const TIMEOUT_SEC = parseInt(process.env.NEXT_PUBLIC_TIMEOUT_SEC || "10", 10);
 

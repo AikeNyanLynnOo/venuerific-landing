@@ -16,8 +16,8 @@ function FooterSection() {
         "xl:my-20": true,
       }}
     >
-      <div className="flex flex-col md:flex-row gap-x-4 justify-between">
-        <div className="flex flex-col items-center md:items-start gap-y-8 md:gap-y-5 w-full md:w-2/5">
+      <div className="flex flex-col md:flex-row gap-x-4 justify-between mb-10">
+        <div className="flex flex-col items-center md:items-start gap-y-8 md:gap-y-5 w-full md:w-2/5 md:pr-10">
           <Image
             src="/logo_with_text.svg"
             alt="venuerific_new_logo"
@@ -278,7 +278,7 @@ function FooterSection() {
       </div>
       <Divider />
       <Typography
-        variant="subheadline1MontRegular"
+        variant="subheadline3MontRegular"
         component="p"
         sx={{
           my: 4,

@@ -1,9 +1,14 @@
+export interface DataObject{
+  data?: any;
+  message? : string; 
+}
+
 export interface APIResponse {
   status: string | number;
   statusText: string;
   success: boolean;
   message?: string;
-  data?: [] | object | null;
+  data?: DataObject | null;
 }
 
 export interface Font {
