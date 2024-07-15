@@ -9,22 +9,13 @@ import { Suspense } from "react";
 
 export default async function Home() {
   const venuesRes = await getVenues();
-
   return (
     <main>
       <Navbar />
       <HeroSection />
       <PromotionSection />
       <Suspense>
-        <VenueGridSection
-          venues={
-            (venuesRes &&
-              venuesRes.data &&
-              venuesRes.data.data &&
-              venuesRes.data.data.venues) ||
-            []
-          }
-        />
+        <VenueGridSection venues={venuesRes.data?.data.venues} />
       </Suspense>
       <SubscribeSection />
       <FooterSection />
