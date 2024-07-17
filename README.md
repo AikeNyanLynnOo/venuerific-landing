@@ -12,7 +12,7 @@
 * NextJS-14 App router
 * Serverside data fetching
 * React Hooks(useMemo, useCallback), Custom Hooks, Custom MUI styled components
-* Redux, Redux-saga, Redux-toolkit (for later use)
+* Redux, Redux-saga, Redux-toolkit (for later use). For now I'm not using the reduxt architecture in this product. I use only `SERVER SIDE FETCHING` for now
 * Axios, Promise
 * Material UI & CSS in JS
 * Tailwind & Pure CSS
